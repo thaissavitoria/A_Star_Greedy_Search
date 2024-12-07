@@ -1,0 +1,103 @@
+================================
+INÍCIO DA BUSCA A* (A STAR SEARCH)
+================================
+Nó Inicial: 20
+Nó Final: 18
+================================
+
+Iteração 1: Explorando nó 20 f[20] = 0
+
+        Distância estimada até o destino (f[21]): 11 (Heurística: 7)
+        Distância estimada até o destino (f[15]): 11 (Heurística: 7)
+  Nó 20 marcado como visitado!
+
+Iteração 2: Explorando nó 15 f[15] = 11
+
+        Distância estimada até o destino (f[10]): 14 (Heurística: 6)
+  Nó 15 marcado como visitado!
+
+Iteração 3: Explorando nó 21 f[21] = 11
+
+        Distância estimada até o destino (f[22]): 11 (Heurística: 6)
+        Distância estimada até o destino (f[16]): 12 (Heurística: 6)
+  Nó 21 marcado como visitado!
+
+Iteração 4: Explorando nó 22 f[22] = 11
+
+        Distância estimada até o destino (f[23]): 14 (Heurística: 5)
+  Nó 22 marcado como visitado!
+
+Iteração 5: Explorando nó 16 f[16] = 12
+
+        Distância estimada até o destino (f[11]): 12 (Heurística: 5)
+  Nó 16 marcado como visitado!
+
+Iteração 6: Explorando nó 11 f[11] = 12
+
+        Distância estimada até o destino (f[12]): 16 (Heurística: 4)
+  Nó 11 marcado como visitado!
+
+Iteração 7: Explorando nó 10 f[10] = 14
+
+  Nó 10 marcado como visitado!
+
+Iteração 8: Explorando nó 23 f[23] = 14
+
+        Distância estimada até o destino (f[24]): 15 (Heurística: 4)
+  Nó 23 marcado como visitado!
+
+Iteração 9: Explorando nó 24 f[24] = 15
+
+        Distância estimada até o destino (f[19]): 18 (Heurística: 3)
+  Nó 24 marcado como visitado!
+
+Iteração 10: Explorando nó 12 f[12] = 16
+
+        Distância estimada até o destino (f[13]): 16 (Heurística: 3)
+        Distância estimada até o destino (f[17]): 21 (Heurística: 5)
+  Nó 12 marcado como visitado!
+
+Iteração 11: Explorando nó 13 f[13] = 16
+
+        Distância estimada até o destino (f[14]): 20 (Heurística: 2)
+        Distância estimada até o destino (f[8]): 20 (Heurística: 2)
+  Nó 13 marcado como visitado!
+
+Iteração 12: Explorando nó 19 f[19] = 18
+
+        Distância estimada até o destino (f[18]): 21 (Heurística: 4)
+  Nó 19 marcado como visitado!
+
+Iteração 13: Explorando nó 14 f[14] = 20
+
+  Nó 14 marcado como visitado!
+
+Iteração 14: Explorando nó 8 f[8] = 20
+
+        Distância estimada até o destino (f[7]): 25 (Heurística: 3)
+  Nó 8 marcado como visitado!
+
+Iteração 15: Explorando nó 17 f[17] = 21
+
+        Distância estimada até o destino (f[18]): 21 (Heurística: 4)
+  Nó 17 marcado como visitado!
+
+Iteração 16: Explorando nó 18 f[18] = 21
+
+    *** NÓ FINAL 18 ENCONTRADO! ***
+
+================================
+RESUMO DA BUSCA
+================================
+
+Nó 18 encontrado!
+Custo do nó 20 até o nó 18: 17
+
+CAMINHO ENCONTRADO:
+20 -> 21 -> 16 -> 11 -> 12 -> 17 -> 18
+
+================================
+ESTATÍSTICAS DE EXECUÇÃO
+================================
+Tempo de execução: 9.6619 ms
+Memoria Usada: 64 bytes

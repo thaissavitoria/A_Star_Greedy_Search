@@ -9,109 +9,111 @@ Iteração 1: Explorando nó 20
   Distância da origem: 0, Predecessor: -1
   Vizinhos do nó 20:
     - Explorando vizinho 21 (NÃO VISITADO)
+     Custo heurístico: 7
     - Explorando vizinho 15 (NÃO VISITADO)
+     Custo heurístico: 7
   Nó 20 visitado!
 
-Iteração 2: Explorando nó 21
+Iteração 2: Explorando nó 15
+  Distância da origem: 1, Predecessor: 20
+  Vizinhos do nó 15:
+    - Vizinho 20 (JÁ VISITADO)
+    - Explorando vizinho 10 (NÃO VISITADO)
+     Custo heurístico: 6
+  Nó 15 visitado!
+
+Iteração 3: Explorando nó 10
+  Distância da origem: 2, Predecessor: 15
+  Vizinhos do nó 10:
+    - Vizinho 15 (JÁ VISITADO)
+  Todos os vizinhos de 10 já foram visitados.
+  Nó 10 visitado!
+
+Iteração 4: Explorando nó 21
   Distância da origem: 1, Predecessor: 20
   Vizinhos do nó 21:
     - Vizinho 20 (JÁ VISITADO)
     - Explorando vizinho 22 (NÃO VISITADO)
+     Custo heurístico: 6
     - Explorando vizinho 16 (NÃO VISITADO)
+     Custo heurístico: 6
   Nó 21 visitado!
 
-Iteração 3: Explorando nó 22
+Iteração 5: Explorando nó 16
   Distância da origem: 2, Predecessor: 21
-  Vizinhos do nó 22:
+  Vizinhos do nó 16:
     - Vizinho 21 (JÁ VISITADO)
-    - Explorando vizinho 23 (NÃO VISITADO)
-  Nó 22 visitado!
-
-Iteração 4: Explorando nó 23
-  Distância da origem: 3, Predecessor: 22
-  Vizinhos do nó 23:
-    - Vizinho 22 (JÁ VISITADO)
-    - Explorando vizinho 24 (NÃO VISITADO)
-  Nó 23 visitado!
-
-Iteração 5: Explorando nó 24
-  Distância da origem: 4, Predecessor: 23
-  Vizinhos do nó 24:
-    - Vizinho 23 (JÁ VISITADO)
-    - Explorando vizinho 19 (NÃO VISITADO)
-  Nó 24 visitado!
-
-Iteração 6: Explorando nó 19
-  Distância da origem: 5, Predecessor: 24
-  Vizinhos do nó 19:
-    - Vizinho 24 (JÁ VISITADO)
-    - Explorando vizinho 18 (NÃO VISITADO)
-  Nó 19 visitado!
-
-Iteração 7: Explorando nó 18
-  Distância da origem: 6, Predecessor: 19
-  Vizinhos do nó 18:
-    - Explorando vizinho 17 (NÃO VISITADO)
-    - Vizinho 19 (JÁ VISITADO)
-  Nó 18 visitado!
-
-Iteração 8: Explorando nó 17
-  Distância da origem: 7, Predecessor: 18
-  Vizinhos do nó 17:
-    - Explorando vizinho 12 (NÃO VISITADO)
-    - Vizinho 18 (JÁ VISITADO)
-  Nó 17 visitado!
-
-Iteração 9: Explorando nó 12
-  Distância da origem: 8, Predecessor: 17
-  Vizinhos do nó 12:
     - Explorando vizinho 11 (NÃO VISITADO)
+     Custo heurístico: 5
+  Nó 16 visitado!
+
+Iteração 6: Explorando nó 11
+  Distância da origem: 3, Predecessor: 16
+  Vizinhos do nó 11:
+    - Vizinho 16 (JÁ VISITADO)
+    - Explorando vizinho 12 (NÃO VISITADO)
+     Custo heurístico: 4
+  Nó 11 visitado!
+
+Iteração 7: Explorando nó 12
+  Distância da origem: 4, Predecessor: 11
+  Vizinhos do nó 12:
+    - Vizinho 11 (JÁ VISITADO)
     - Explorando vizinho 13 (NÃO VISITADO)
-    - Vizinho 17 (JÁ VISITADO)
+     Custo heurístico: 3
+    - Explorando vizinho 17 (NÃO VISITADO)
+     Custo heurístico: 5
   Nó 12 visitado!
 
-Iteração 10: Explorando nó 13
-  Distância da origem: 9, Predecessor: 12
+Iteração 8: Explorando nó 13
+  Distância da origem: 5, Predecessor: 12
   Vizinhos do nó 13:
     - Vizinho 12 (JÁ VISITADO)
     - Explorando vizinho 14 (NÃO VISITADO)
+     Custo heurístico: 2
     - Explorando vizinho 8 (NÃO VISITADO)
+     Custo heurístico: 2
   Nó 13 visitado!
 
-Iteração 11: Explorando nó 14
-  Distância da origem: 10, Predecessor: 13
+Iteração 9: Explorando nó 8
+  Distância da origem: 6, Predecessor: 13
+  Vizinhos do nó 8:
+    - Vizinho 13 (JÁ VISITADO)
+    - Explorando vizinho 7 (NÃO VISITADO)
+     Custo heurístico: 3
+  Nó 8 visitado!
+
+Iteração 10: Explorando nó 14
+  Distância da origem: 6, Predecessor: 13
   Vizinhos do nó 14:
     - Vizinho 13 (JÁ VISITADO)
   Todos os vizinhos de 14 já foram visitados.
   Nó 14 visitado!
 
-Iteração 12: Explorando nó 8
-  Distância da origem: 10, Predecessor: 13
-  Vizinhos do nó 8:
-    - Vizinho 13 (JÁ VISITADO)
-    - Explorando vizinho 7 (NÃO VISITADO)
-  Nó 8 visitado!
-
-Iteração 13: Explorando nó 7
-  Distância da origem: 11, Predecessor: 8
+Iteração 11: Explorando nó 7
+  Distância da origem: 7, Predecessor: 8
   Vizinhos do nó 7:
     - Vizinho 8 (JÁ VISITADO)
     - Explorando vizinho 2 (NÃO VISITADO)
+     Custo heurístico: 2
     - Explorando vizinho 6 (NÃO VISITADO)
+     Custo heurístico: 4
   Nó 7 visitado!
 
-Iteração 14: Explorando nó 2
-  Distância da origem: 12, Predecessor: 7
+Iteração 12: Explorando nó 2
+  Distância da origem: 8, Predecessor: 7
   Vizinhos do nó 2:
     - Vizinho 7 (JÁ VISITADO)
     - Explorando vizinho 3 (NÃO VISITADO)
+     Custo heurístico: 1
   Nó 2 visitado!
 
-Iteração 15: Explorando nó 3
-  Distância da origem: 13, Predecessor: 2
+Iteração 13: Explorando nó 3
+  Distância da origem: 9, Predecessor: 2
   Vizinhos do nó 3:
     - Vizinho 2 (JÁ VISITADO)
     - Explorando vizinho 4 (NÃO VISITADO)
+     Custo heurístico: 0
     *** NÓ FINAL 4 ENCONTRADO! ***
   Todos os vizinhos de 3 já foram visitados.
   Nó 3 visitado!
@@ -121,13 +123,13 @@ RESUMO DA BUSCA
 ================================
 
 Nó 4 encontrado!
-Distância do nó 20 até o nó 4: 14
+Distância do nó 20 até o nó 4: 10
 
 CAMINHO ENCONTRADO:
-20 -> 21 -> 22 -> 23 -> 24 -> 19 -> 18 -> 17 -> 12 -> 13 -> 8 -> 7 -> 2 -> 3 -> 4
+20 -> 21 -> 16 -> 11 -> 12 -> 13 -> 8 -> 7 -> 2 -> 3 -> 4
 
 ================================
 ESTATÍSTICAS DE EXECUÇÃO
 ================================
-Tempo de execução: 0.337574 ms
-Memoria Usada: 80 bytes
+Tempo de execução: 13.9258 ms
+Memoria Usada: 64 bytes

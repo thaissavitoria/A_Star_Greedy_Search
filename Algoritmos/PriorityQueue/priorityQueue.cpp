@@ -18,7 +18,7 @@ void PriorityQueue::Enqueue(int vertex, int value) {
     if (Empty()) {
         newNode->setNext(front);
         front = newNode;
-    } else if (value < front->getValue()) {
+    } else if (value <= front->getValue()) {
         newNode->setNext(front);
         front = newNode;
     } else {

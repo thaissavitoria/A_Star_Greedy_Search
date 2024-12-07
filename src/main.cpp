@@ -10,6 +10,7 @@ int main() {
     grafo.imprimir();
     cout << endl;
     GreedySearch::executar(grafo, 20, 4);
+    A_Star::executar(grafo, 20, 18);
     cout << "Caminhos e processos da Busca Gulosa e do A* salvos nos arquivos txt" << endl;
 
     return 0;

@@ -57,6 +57,7 @@ void GreedySearch::executar(Grafo &grafo, int inicial, int final) {
                 d[v] = d[u] + 1;
                 pi[v] = u;
                 filaPrioridade->Enqueue(v, heuristica[v]);
+                out << "     Custo heurístico: " << heuristica[v] << endl;
 
                 if (v == final) {
                     found = true;
