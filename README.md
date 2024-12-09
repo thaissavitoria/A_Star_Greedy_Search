@@ -60,7 +60,7 @@ Analisando a busca gulosa pela melhor escolha temos que ela é completa em espa�
 Já a análise da busca a estrela mostra que, para espaços de estados finitos é completa. Porém, a otimabilidade dela depende das propriedades citadas acima, se a heurística aplicada cumprir essas propriedades o algoritmo A* tem custo ótimo.
 
 #### Análisando as complexidades
-- Temporal e Memória
+Temporal e Memória
 - No pior caso, a busca gulosa pela melhor escolha apresenta complexicomplexidade de tempo e de espaço $$O(|V|)$$. Com uma boa função heurística, no entanto, a complexidade pode ser reduzida substancialmente, chegando a alcançar $$O(B*M)$$.
 - Na A*, no seu pior caso a complexidade de espaço e tempo é de $$O(b^d)$$, com uma heurística ideal o número de nós explorados diminui, tornando mais eficiente. A memória nesse algoritmo pode ser um problema quando tem um alto fator de ramificação ou profundidade.
 
