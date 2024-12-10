@@ -4,15 +4,11 @@ Os algoritmos analisados neste trabalho pertencem à categoria de buscas informa
 
 ## Greedy Search:
 A busca gulosa (Greedy Search) é um algoritmo de busca informada utilizado para encontrar um caminho em uma estrutura de dados que pode ser representada como um grafo ou uma árvore. Nesse algoritmo, a exploração começa em um nó inicial e é guiada por uma função heurística h(n), que estima a "proximidade" do nó atual em relação ao objetivo. Diferentemente de outros algoritmos como A*, a busca gulosa considera apenas o valor heurístico para decidir qual nó explorar a seguir, ignorando o custo acumulado do caminho. O processo utiliza uma fila de prioridade para organizar os nós a serem explorados com base na heurística, e um conjunto de nós visitados para garantir que cada nó seja processado apenas uma vez. 
-> **OBS:** a implementação está no arquivo 
-Astar.cpp
-.
+> **OBS:** a implementação está no arquivo greedySearch.cpp.
 
 ## A*:
 A busca A* (A Star Search) é um algoritmo utilizado para encontrar o caminho mais curto em um grafo, combinando estratégias de busca informada e custo acumulado. Nesse algoritmo, cada nó é avaliado com base em uma função custo f(n)=g(n)+h(n), onde g(n) representa o custo acumulado do nó inicial até o nó atual e h(n) é a heurística que estima o custo restante do nó atual até o destino. O algoritmo utiliza uma fila de prioridade para explorar os nós com menor custo total estimado f(n), garantindo que a exploração seja guiada para a solução de forma eficiente.
-> **OBS:** a implementação está no arquivo 
-greedySearch.cpp
-.
+> **OBS:** a implementação está no arquivo aStar.cpp.
 
 ## Heurística
 A heurística é o cálculo feito que diz o custo estimado do caminho mínimo a partir do estado do vértice n até o estado meta. Para resolução do problema do labirinto foi utilizada a heurística com base na distância de Manhattan, que diz:
