@@ -6,124 +6,64 @@ Nó Final: 4
 ================================
 
 Iteração 1: Explorando nó 20
-  Distância da origem: 0, Predecessor: -1
-  Vizinhos do nó 20:
-    - Explorando vizinho 21 (NÃO VISITADO)
-     Custo heurístico: 7
-    - Explorando vizinho 15 (NÃO VISITADO)
-     Custo heurístico: 7
-  Nó 20 visitado!
+    - vizinho 21 enfileirado--- h[n]= 7
+    - vizinho 15 enfileirado--- h[n]= 7
 
 Iteração 2: Explorando nó 15
-  Distância da origem: 1, Predecessor: 20
-  Vizinhos do nó 15:
-    - Vizinho 20 (JÁ VISITADO)
-    - Explorando vizinho 10 (NÃO VISITADO)
-     Custo heurístico: 6
-  Nó 15 visitado!
+    - vizinho 20 (JÁ VISITADO)
+    - vizinho 10 enfileirado--- h[n]= 6
 
 Iteração 3: Explorando nó 10
-  Distância da origem: 2, Predecessor: 15
-  Vizinhos do nó 10:
-    - Vizinho 15 (JÁ VISITADO)
-  Todos os vizinhos de 10 já foram visitados.
-  Nó 10 visitado!
+    - vizinho 15 (JÁ VISITADO)
 
 Iteração 4: Explorando nó 21
-  Distância da origem: 1, Predecessor: 20
-  Vizinhos do nó 21:
-    - Vizinho 20 (JÁ VISITADO)
-    - Explorando vizinho 22 (NÃO VISITADO)
-     Custo heurístico: 6
-    - Explorando vizinho 16 (NÃO VISITADO)
-     Custo heurístico: 6
-  Nó 21 visitado!
+    - vizinho 20 (JÁ VISITADO)
+    - vizinho 22 enfileirado--- h[n]= 6
+    - vizinho 16 enfileirado--- h[n]= 6
 
 Iteração 5: Explorando nó 16
-  Distância da origem: 2, Predecessor: 21
-  Vizinhos do nó 16:
-    - Vizinho 21 (JÁ VISITADO)
-    - Explorando vizinho 11 (NÃO VISITADO)
-     Custo heurístico: 5
-  Nó 16 visitado!
+    - vizinho 21 (JÁ VISITADO)
+    - vizinho 11 enfileirado--- h[n]= 5
 
 Iteração 6: Explorando nó 11
-  Distância da origem: 3, Predecessor: 16
-  Vizinhos do nó 11:
-    - Vizinho 16 (JÁ VISITADO)
-    - Explorando vizinho 12 (NÃO VISITADO)
-     Custo heurístico: 4
-  Nó 11 visitado!
+    - vizinho 16 (JÁ VISITADO)
+    - vizinho 12 enfileirado--- h[n]= 4
 
 Iteração 7: Explorando nó 12
-  Distância da origem: 4, Predecessor: 11
-  Vizinhos do nó 12:
-    - Vizinho 11 (JÁ VISITADO)
-    - Explorando vizinho 13 (NÃO VISITADO)
-     Custo heurístico: 3
-    - Explorando vizinho 17 (NÃO VISITADO)
-     Custo heurístico: 5
-  Nó 12 visitado!
+    - vizinho 11 (JÁ VISITADO)
+    - vizinho 13 enfileirado--- h[n]= 3
+    - vizinho 17 enfileirado--- h[n]= 5
 
 Iteração 8: Explorando nó 13
-  Distância da origem: 5, Predecessor: 12
-  Vizinhos do nó 13:
-    - Vizinho 12 (JÁ VISITADO)
-    - Explorando vizinho 14 (NÃO VISITADO)
-     Custo heurístico: 2
-    - Explorando vizinho 8 (NÃO VISITADO)
-     Custo heurístico: 2
-  Nó 13 visitado!
+    - vizinho 12 (JÁ VISITADO)
+    - vizinho 14 enfileirado--- h[n]= 2
+    - vizinho 8 enfileirado--- h[n]= 2
 
 Iteração 9: Explorando nó 8
-  Distância da origem: 6, Predecessor: 13
-  Vizinhos do nó 8:
-    - Vizinho 13 (JÁ VISITADO)
-    - Explorando vizinho 7 (NÃO VISITADO)
-     Custo heurístico: 3
-  Nó 8 visitado!
+    - vizinho 13 (JÁ VISITADO)
+    - vizinho 7 enfileirado--- h[n]= 3
 
 Iteração 10: Explorando nó 14
-  Distância da origem: 6, Predecessor: 13
-  Vizinhos do nó 14:
-    - Vizinho 13 (JÁ VISITADO)
-  Todos os vizinhos de 14 já foram visitados.
-  Nó 14 visitado!
+    - vizinho 13 (JÁ VISITADO)
 
 Iteração 11: Explorando nó 7
-  Distância da origem: 7, Predecessor: 8
-  Vizinhos do nó 7:
-    - Vizinho 8 (JÁ VISITADO)
-    - Explorando vizinho 2 (NÃO VISITADO)
-     Custo heurístico: 2
-    - Explorando vizinho 6 (NÃO VISITADO)
-     Custo heurístico: 4
-  Nó 7 visitado!
+    - vizinho 8 (JÁ VISITADO)
+    - vizinho 2 enfileirado--- h[n]= 2
+    - vizinho 6 enfileirado--- h[n]= 4
 
 Iteração 12: Explorando nó 2
-  Distância da origem: 8, Predecessor: 7
-  Vizinhos do nó 2:
-    - Vizinho 7 (JÁ VISITADO)
-    - Explorando vizinho 3 (NÃO VISITADO)
-     Custo heurístico: 1
-  Nó 2 visitado!
+    - vizinho 7 (JÁ VISITADO)
+    - vizinho 3 enfileirado--- h[n]= 1
 
 Iteração 13: Explorando nó 3
-  Distância da origem: 9, Predecessor: 2
-  Vizinhos do nó 3:
-    - Vizinho 2 (JÁ VISITADO)
-    - Explorando vizinho 4 (NÃO VISITADO)
-     Custo heurístico: 0
-    *** NÓ FINAL 4 ENCONTRADO! ***
-  Todos os vizinhos de 3 já foram visitados.
-  Nó 3 visitado!
+    - vizinho 2 (JÁ VISITADO)
+    - vizinho 4 enfileirado--- h[n]= 0
 
 ================================
 RESUMO DA BUSCA
 ================================
 
 Nó 4 encontrado!
-Distância do nó 20 até o nó 4: 10
 
 CAMINHO ENCONTRADO:
 20 -> 21 -> 16 -> 11 -> 12 -> 13 -> 8 -> 7 -> 2 -> 3 -> 4
@@ -131,5 +71,5 @@ CAMINHO ENCONTRADO:
 ================================
 ESTATÍSTICAS DE EXECUÇÃO
 ================================
-Tempo de execução: 13.9258 ms
+Tempo de execução: 0.190601 ms
 Memoria Usada: 64 bytes

@@ -45,38 +45,33 @@ void GreedySearch::executar(Grafo &grafo, int inicial, int final) {
         filaPrioridade->Dequeue();
 
         out << "\nIteração " << iteracao << ": Explorando nó " << u << endl;
-        out << "  Distância da origem: " << d[u] << ", Predecessor: " << pi[u] << endl;
 
-        out << "  Vizinhos do nó " << u << ":" << endl;
         bool algumNaoVisitado = false;
 
         for (int v : adj[u]) {
             if (!visited[v]) {
-                out << "    - Explorando vizinho " << v << " (NÃO VISITADO)" << endl;
+                out << "    - vizinho " << v << " enfileirado" << "--- h[n]= " << heuristica[v] << endl;
                 visited[v] = true;
                 d[v] = d[u] + 1;
                 pi[v] = u;
                 filaPrioridade->Enqueue(v, heuristica[v]);
-                out << "     Custo heurístico: " << heuristica[v] << endl;
 
                 if (v == final) {
                     found = true;
-                    out << "    *** NÓ FINAL " << final << " ENCONTRADO! ***" << endl;
                     break;
                 }
 
                 algumNaoVisitado = true;
             } else {
-                out << "    - Vizinho " << v << " (JÁ VISITADO)" << endl;
+                out << "    - vizinho " << v << " (JÁ VISITADO)" << endl;
             }
         }
 
         if (!algumNaoVisitado) {
-            out << "  Todos os vizinhos de " << u << " já foram visitados." << endl;
+            //out << "  Todos os vizinhos de " << u << " já foram visitados." << endl;
         }
 
         visited[u] = true;
-        out << "  Nó " << u << " visitado!" << endl;
     }
 
     auto end = chrono::high_resolution_clock::now();
@@ -88,9 +83,6 @@ void GreedySearch::executar(Grafo &grafo, int inicial, int final) {
 
     if (found) {
         out << "\nNó " << final << " encontrado!" << endl;
-        out << "Distância do nó " << inicial << " até o nó " << final
-            << ": " << d[final] << endl;
-
         out << "\nCAMINHO ENCONTRADO:" << endl;
         printPath(pi, final, out);
     } else {

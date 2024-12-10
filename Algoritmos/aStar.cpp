@@ -5,12 +5,12 @@
 #include <limits>
 #include <chrono>
 #include <memory>
-#include <cstdlib> // Para rand()
-#include <ctime>   // Para srand()
+#include <cstdlib> 
+#include <ctime> 
 
 
 void A_Star::executar(Grafo &grafo, int inicial, int final) {
-    srand(static_cast<unsigned>(time(0))); // Inicializa a semente para números aleatórios
+    srand(static_cast<unsigned>(time(0)));
     int vertices = grafo.getNumVertices();
     vector<vector<int>> &adj = grafo.getAdjList();
     vector<int> &heuristica = grafo.getHeuristica();
@@ -51,12 +51,11 @@ void A_Star::executar(Grafo &grafo, int inicial, int final) {
         int u = filaPrioridade->Front()->getVertex();
         filaPrioridade->Dequeue();
 
-        if (u == inicial)
-        {
+        if (u == inicial) {
             f[u] = 0;
         }
-        
-        out << "\nIteração " << iteracao << ": Explorando nó " << u << " f[" << u << "]"<< " = " << f[u] <<endl;
+
+        out << "\nIteração " << iteracao << ": Explorando nó " << u << " f[" << u << "]" << " = " << f[u] << endl;
         //out << "  Predecessores do nó " << u << ":";
         //for (int p : predecessores[u]) {
         //    out << " Nó " << p << " (g[" << p << "] = " << g[p] << ")";
@@ -67,11 +66,6 @@ void A_Star::executar(Grafo &grafo, int inicial, int final) {
             out << "    *** NÓ FINAL " << final << " ENCONTRADO! ***" << endl;
             break;
         }
-        //out << "  Custo do nó atual (g[" << u << "]): " << g[u] << endl;
-
-        
-
-        //out << "  Vizinhos do nó " << u << ":" << endl;
 
         bool algumNaoVisitado = false;
 
@@ -80,12 +74,7 @@ void A_Star::executar(Grafo &grafo, int inicial, int final) {
             int custo = g[u] + custoAleatorio;
 
             if (!visited[v]) {
-                //out << "    Vizinho " << v << " -> Custo aleatório: " << custoAleatorio << endl;
-                //out << "      - Atualizando custo do vizinho " << v << endl;
-                //out << "        Novo custo acumulado (g[" << v << "]): " << custo << endl;
-
-                if (v != final)
-                {
+                if (v != final) {
                     visited[v] = true;
                 }
 
@@ -127,7 +116,7 @@ void A_Star::executar(Grafo &grafo, int inicial, int final) {
             << ": " << g[final] << endl;
 
         out << "\nCAMINHO ENCONTRADO:" << endl;
-        printPath(pi, final , out);
+        printPath(pi, final, out);
     } else {
         out << "Não foi possível encontrar um caminho até o nó " << final << endl;
     }
