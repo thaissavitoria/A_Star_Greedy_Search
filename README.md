@@ -59,8 +59,8 @@ Já a análise da busca A* mostra que, para espaços de estados finitos é compl
 
 #### Análisando as complexidades
 Temporal e Memória
-- No pior caso, a busca gulosa apresenta complexidade de tempo e de espaço $$O(|V|)$$. Com uma boa função heurística, no entanto, a complexidade pode ser reduzida substancialmente, chegando a alcançar $$O(B*M)$$.
-- Na A*, no seu pior caso a complexidade de espaço e tempo é de $$O(b^d)$$, com uma heurística ideal o número de nós explorados diminui, tornando mais eficiente. A memória nesse algoritmo pode ser um problema quando tem um alto fator de ramificação ou profundidade.
+- No pior caso, a busca gulosa apresenta complexidade de tempo e de espaço $$O(|V|)$$, sendo V os vértices. Com uma boa função heurística, no entanto, a complexidade pode ser reduzida substancialmente, chegando a alcançar $$O(B*M)$$, sendo B o fator de ramificação e M a profundidade máxima.
+- Na A*, no seu pior caso a complexidade de espaço e tempo é de $$O(b^d)$$, sendo b o fator de ramificação e d a profundidade da meta. Com uma heurística ideal o número de nós explorados diminui, tornando mais eficiente. A memória nesse algoritmo pode ser um problema quando tem um alto fator de ramificação ou profundidade.
 
 #### Tempo de execução e Consumo de memória
 
