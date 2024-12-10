@@ -49,19 +49,21 @@ Estes arquivos contêm, detalhes passo a passo da exploração, ordem de visita�
 
 ### Discussão 
 
-Como base para discussão feita, é preciso compreender alguns conceitos. Um algoritmo completo deve ser capaz de explorar sistematicamente todos os estados que podem ser alcançados desde o estado inicial. Em espaços de estados finitos, que é o caso deste trabalho, é garantido que poderá ser atingido qualquer estado que esteja conectado ao estado inicial. Em relação a heurística temos propriedades que determinam sua otimabilidade, uma propriedade fundamental é a admissibilidade que diz que uma heurística admissível é a que nunca superestima o custo de atingir a meta. Isso significa que ela sempre fornece uma estimativa igual ou menor ao custo real mínimo necessário para atingir o destino. Outra propriedade importante da heurística é a consistência, onde uma heurística é consistente se, para cada nó n e para todo sucessor n' de n gerado por uma ação a, tivermos que: $$h(n) ≤ c(n,a,n') + h(n')$$.
+Como base para discussão feita, é preciso compreender alguns conceitos. Um algoritmo completo deve ser capaz de explorar sistematicamente todos os estados que podem ser alcançados desde o estado inicial. Em espaços de estados finitos, que é o caso deste trabalho, é garantido que poderá ser atingido, nas duas implementações, qualquer estado que esteja conectado ao estado inicial. 
 
-Com uma heurística consistente na primeira vez que um estado for atingido ele estará em um caminho ótimo, portante, nunca teremos que adicionar novamente um estado à fronteira e nunca teremos que alterar uma entrada em alcançado. Porém, com uma heurística inconsistente, podemos acabar com vários caminhos atingindo o mesmo estado, e se cada novo caminho tiver um custo menor do que o anterior, entao acabaremos com varios nós para aquele estado na fronteira, custando tempo e espaço.
+Em relação a heurística temos propriedades que determinam sua otimabilidade, uma propriedade fundamental é a admissibilidade que diz que uma heurística admissível é a que nunca superestima o custo de atingir a meta. Isso significa que ela sempre fornece uma estimativa igual ou menor ao custo real mínimo necessário para atingir o destino. Outra propriedade importante da heurística é a consistência, onde uma heurística é consistente se, para cada nó n e para todo sucessor n' de n gerado por uma ação a, tivermos que: $$h(n) ≤ c(n,a,n') + h(n')$$.
+
+Com uma heurística consistente na primeira vez que um estado for atingido ele estará em um caminho ótimo, portanto, nunca teremos que adicionar novamente um estado à fronteira e nunca teremos que alterar uma entrada em alcançado. Porém, com uma heurística inconsistente, podemos acabar com vários caminhos atingindo o mesmo estado, e se cada novo caminho tiver um custo menor do que o anterior, então acabaremos com vários nós para aquele estado na fronteira, custando tempo e espaço.
 
 A distância de Manhattan assume um caminho direto. Se houver obstáculos que forcem desvios, ela ainda será admissível (não superestima o custo), mas poderá ser menos eficiente.
 
 Analisando a busca gulosa pela melhor escolha temos que ela é completa em espaços de estados finitos, mas não nos infinitos. Além disso, não é um algoritmo ótimo devido a sua lógica gulosa, uma vez que a cada passo ele tenta chegar o mais próximo da meta que puder, porém ser guloso pode levar a resultados piores do que ser cauteloso.
 
-Já a análise da busca a estrela mostra que, para espaços de estados finitos é completa. Porém, a otimabilidade dela depende das propriedades citadas acima, se a heurística aplicada cumprir essas propriedades o algoritmo A* tem custo ótimo.
+Já a análise da busca A* mostra que, para espaços de estados finitos é completa. Porém, a otimabilidade dela depende das propriedades citadas acima, se a heurística aplicada cumprir essas propriedades o algoritmo A* tem custo ótimo.
 
 #### Análisando as complexidades
 Temporal e Memória
-- No pior caso, a busca gulosa pela melhor escolha apresenta complexicomplexidade de tempo e de espaço $$O(|V|)$$. Com uma boa função heurística, no entanto, a complexidade pode ser reduzida substancialmente, chegando a alcançar $$O(B*M)$$.
+- No pior caso, a busca gulosa apresenta complexidade de tempo e de espaço $$O(|V|)$$. Com uma boa função heurística, no entanto, a complexidade pode ser reduzida substancialmente, chegando a alcançar $$O(B*M)$$.
 - Na A*, no seu pior caso a complexidade de espaço e tempo é de $$O(b^d)$$, com uma heurística ideal o número de nós explorados diminui, tornando mais eficiente. A memória nesse algoritmo pode ser um problema quando tem um alto fator de ramificação ou profundidade.
 
 #### Tempo de execução e Consumo de memória
